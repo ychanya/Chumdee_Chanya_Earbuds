@@ -1,0 +1,5 @@
+@use '../abstracts';
+
+h1 {
+    color: abstracts.$primary-color;
+}
