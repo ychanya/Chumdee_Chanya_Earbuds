@@ -10,10 +10,39 @@
 </head>
 
 <body>
-    <h1>HELLO!</h1>
+    <model-viewer src="model/Chumdee_Chanya_WorkingFile.gltf" camera-controls tone-mapping="neutral"
+        poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr"
+        exposure="1.8">
+
+        <button class="Hotspot" slot="hotspot-1"
+            data-position="-0.34792785536887116m 1.0911879997323666m -0.6833358506481345m"
+            data-normal="0.024804068827184115m -0.013008509233443275m -0.9996076914755807m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Clear Audio</div>
+        </button>
+
+        <button class="Hotspot" slot="hotspot-3"
+            data-position="-2.1196953246579806m 0.49021543795242817m 0.0808029161303323m" data-normal="0m -1m 0m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Fast Charge</div>
+        </button>
+
+        <button class="Hotspot" slot="hotspot-4"
+            data-position="-1.9996913459349563m 1.2118542797722323m -0.7036943627720136m"
+            data-normal="0.14708997342933056m 0m -0.9891231165616133m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Long Battery Life</div>
+        </button>
+
+        <button class="Hotspot" slot="hotspot-5"
+            data-position="-3.3479671207984927m 1.1565761924795748m 0.30043348135214987m"
+            data-normal="-0.9893632031761846m 0m -0.14546632669095474m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Comfortable Fit</div>
+        </button>
+    </model-viewer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
