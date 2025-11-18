@@ -48,7 +48,6 @@ console.log("JS file connected");
             scrub: 1.5,
             start: "top top",
             end: "bottom 500",
-            markers: true
         },
         onUpdate: drawFrame
     })
