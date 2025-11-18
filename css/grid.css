@@ -101,22 +101,6 @@ body, p, h1, h2, h3, h4, h5 {
 .col-end-4	{grid-column-end: 4;}
 .col-end-5	{grid-column-end: 5;}
 
-.custom-grid-about {
-   display: grid;
-   grid-template-columns: 4;
-   grid-column-gap: 15px;
-}
-.custom-grid-project {
-   display: grid;
-   grid-template-columns: 4;
-   grid-column-gap: 15px;
-}
-.custom-grid-email {
-   display: grid;
-   grid-template-columns: 4;
-   grid-column-gap: 15px;
-}
-
 /* _____________________________________
 
    01-c. Tablet
@@ -175,24 +159,6 @@ body, p, h1, h2, h3, h4, h5 {
    .m-col-end-11	{grid-column-end: 11;}
    .m-col-end-12	{grid-column-end: 12;}
    .m-col-end-13	{grid-column-end: 13;}
-
-   .custom-grid-about {
-      display: grid;
-      grid-template-columns: 9;
-      grid-column-gap: 15px;
-   }
-
-   .custom-grid-project {
-      display: grid;
-      grid-template-columns: 8;
-      grid-column-gap: 15px;
-   }
-
-   .custom-grid-email {
-      display: grid;
-      grid-template-columns: 4;
-      grid-column-gap: 15px;
-   }
 }
 
 /* _____________________________________
