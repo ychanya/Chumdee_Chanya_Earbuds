@@ -1,5 +1,71 @@
+// *********************** JS Guide ***********************
+
+//   00. Mobile Menu 
+//   01. Earbuds Scrub
+//   02. Model Viewer
+//   03. X-Ray view
+
+// ********************************************************
+
 console.log("JS file connected");
 
+// ------------- Mobile Menu ------------- 
+
+
+
+// ------------- Earbuds Scrub ------------- 
+
+(function(){
+
+    canvas = document.querySelector("#earbud-scrub");
+    const context = canvas.getContext("2d");
+
+    // Canvas resolution
+    canvas.width = 1920;
+    canvas.height = 1080;
+
+    const frameCount = 201;
+
+    const images = [];
+
+    // Using an object to hold the current frame and animate its property with GSAP
+    const buds = {
+        frame: 0
+    }
+
+    for (let i=0; i<frameCount; i++) {
+        const img = new Image();
+        img.src = `images/still_images/earbuds_${i}.webp`;
+        images.push(img);
+    }
+
+    gsap.to(buds, {
+        frame: 200,
+        snap: "frame",
+        scrollTrigger: {
+            trigger: "#earbud-scrub",
+            pin: true, // Keep canvas fixed while scrolling
+            scrub: 1.5,
+            start: "top top",
+            end: "bottom 500",
+            markers: true
+        },
+        onUpdate: drawFrame
+    })
+
+    // Draw the first frame after the first image loads
+    images[0].addEventListener("load", drawFrame);
+
+    function drawFrame() {
+        // Clear canvas before drawing
+        context.clearRect(0,0, canvas.width, canvas.height);
+        // Draw the current frame
+        context.drawImage(images[buds.frame], 0, 0);
+    }
+})();
+
+
+// ------------- Model Viewer ------------- 
 (function(){
     const hotspots = document.querySelectorAll(".Hotspot");
     const productDetails = [
