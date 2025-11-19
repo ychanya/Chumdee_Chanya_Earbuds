@@ -12,6 +12,10 @@ model-viewer {
   }
 }
 
+canvas {
+  max-width: 100%;
+}
+
 .Hotspot {
   background: url(../images/hotspot.svg) center no-repeat;
   border: 0;
