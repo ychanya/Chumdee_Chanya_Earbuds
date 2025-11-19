@@ -47,7 +47,7 @@ console.log("JS file connected");
             pin: true, // Keep canvas fixed while scrolling
             scrub: 1.5,
             start: "top top",
-            end: "bottom 500",
+            end: "+=120%"
         },
         onUpdate: drawFrame
     })
