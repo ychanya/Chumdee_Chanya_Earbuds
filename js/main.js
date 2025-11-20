@@ -2,8 +2,9 @@
 
 //   00. Mobile Menu 
 //   01. Earbuds Scrub
-//   02. Model Viewer
-//   03. X-Ray view
+//   02. Video Player
+//   03. Model Viewer
+//   04. X-Ray view
 
 // ********************************************************
 
@@ -79,6 +80,16 @@ console.log("JS file connected");
     }
 })();
 
+// ------------- Video Player ------------- 
+
+(function() {
+     const player = new Plyr("video", {
+        controls: [
+            "play", 
+            "mute" 
+        ]
+    });
+})();
 
 // ------------- Model Viewer ------------- 
 (function(){

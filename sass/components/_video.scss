@@ -1,0 +1,51 @@
+@use '../abstracts';
+
+#video-con {
+    background-color: abstracts.$primary-color;
+    text-align: center;
+    padding-top: 50px;
+    h3 {
+        font-size: 28px;
+    }
+
+    p {
+        color: abstracts.$text-color;
+        font-size: 18px;
+        padding: 25px 50px 50px 50px;
+    }
+}
+
+.plyr {
+    height: auto;
+} 
+
+:root {
+  --plyr-color-main: rgba(72, 72, 75, 0.5);
+  --plyr-control-icon-size: 15px;
+  --plyr-control-radius: 15px;
+}
+
+
+@media  screen and (min-width: 768px) {
+    #video-con h3 {
+        font-size: 32px;
+    }
+
+    #video-con p {
+        color: abstracts.$text-color;
+        font-size: 24px;
+        padding: 25px 50px 50px 50px;
+    }
+}
+
+@media  screen and (min-width: 1200px) {
+    #video-con h3 {
+        font-size: 48px;
+    }
+
+    #video-con p {
+        color: abstracts.$text-color;
+        font-size: 28px;
+        padding: 25px 50px 50px 50px;
+    }
+}
