@@ -11,7 +11,23 @@ console.log("JS file connected");
 
 // ------------- Mobile Menu ------------- 
 
+(function() {
+    const hambergurBtn = document.querySelector("#hamburgerBtn");
+    const closingBtn = document.querySelector("#closeHamburger");
 
+    function toggleHamburger() {
+        const mobileMenu = document.querySelector("#mobileMenu");
+
+        if(mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.remove("hidden");
+        } else {
+            mobileMenu.classList.add("hidden");
+        }
+    }
+
+    hambergurBtn.addEventListener("click",toggleHamburger);
+    closingBtn.addEventListener("click",toggleHamburger);
+})();
 
 // ------------- Earbuds Scrub ------------- 
 
@@ -46,7 +62,7 @@ console.log("JS file connected");
             trigger: "#earbud-scrub",
             pin: true, // Keep canvas fixed while scrolling
             scrub: 1.5,
-            start: "top top",
+            start: "top +=6%",
             end: "+=120%"
         },
         onUpdate: drawFrame

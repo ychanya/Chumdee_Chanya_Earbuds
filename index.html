@@ -5,12 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wave Earbuds</title>
+    <script src="https://kit.fontawesome.com/bb4be9e166.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <h1 class="hidden">Earbuds Promotional Page</h1>
+
+    <header>
+        <h2 class="hidden">Navigation bar</h2>
+        <!-- Mobile Nav -->
+        <section id="mobile-nav" class="grid-con">
+            <h3 class="hidden">Mobile Navigation</h3>
+            <a href="index.html" class="col-start-1 col-span-1 wrapper">WAVE</a>
+            <div class="col-start-4 col-span-1 wrapper">
+                <img id="shopping-icon" src="images/shopping-bag.png" alt="Shopping bag icon">
+                <button id="hamburgerBtn">&#9776;</button>
+            </div>
+        </section>
+
+        <!-- Mobile Menu -->
+        <nav id="mobileMenu" class="hidden">
+            <h3 class="hidden">Mobile Menu</h3>
+
+            <button id="closeHamburger">&times;</button>
+
+            <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Exploring</a></li>
+            </ul>
+        </nav>
+
+        <!-- Desktop Nav -->
+        <nav id="main-nav">
+            <h3 class="hidden">Desktop Navigation</h3>
+
+            <a href="index.html" id="main-logo">WAVE</a>
+
+            <ul>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Exploring</a></li>
+            </ul>
+
+            <button>Buy</button>
+        </nav>
+
+    </header>
+
     <section class="full-with-grid-con">
         <canvas id="earbud-scrub" class="col-span-full m-col-span-full"></canvas>
     </section>

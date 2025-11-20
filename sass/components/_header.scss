@@ -1,0 +1,99 @@
+@use '../abstracts';
+
+#main-nav{
+    height: 62px;
+    background-color: abstracts.$secondary-color;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 2px 2px rgba(145, 144, 144, 0.3);
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        gap: 50px;
+    }
+
+    a {
+        color: abstracts.$primary-color;
+        text-decoration: none;
+        &:hover {
+            color: abstracts.$text-color;
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    button {
+        background: none;
+        border: none;
+        font-family: inherit;
+        padding: 6px 18px;
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: abstracts.$cta-button-color;
+        color: abstracts.$secondary-color;
+        &:hover {
+            background-color: #004e9d;
+            transition: all .3s ease-in-out;
+        }
+    }
+}
+
+#mobile-nav {
+    background-color: abstracts.$secondary-color;
+    height: 74px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 0 2px 2px rgba(145, 144, 144, 0.3);
+
+    a{
+        text-decoration: none;
+        color: abstracts.$primary-color;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #shopping-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    button{
+        font-size: 24px;
+        background: none;
+        border: none;
+        font-family: inherit;
+        cursor: pointer;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    #main-nav {
+        display: none;
+    }
+}
+
+@media  screen and (min-width: 768px) {
+    #mobile-nav {
+        display: none;
+    }
+}
