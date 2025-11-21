@@ -60,6 +60,9 @@ model-viewer {
 }
 
 @media  screen and (max-width: 768px) {
+  model-viewer {
+    height: 300px;
+  }
   .Hotspot {
     display: none;
   }

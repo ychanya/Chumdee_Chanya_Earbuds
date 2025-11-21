@@ -6,6 +6,7 @@
 //   03. Model Viewer
 //   04. X-Ray view
 //   05. Color Options
+//   06. Fade-in Animation
 
 // ********************************************************
 
@@ -68,7 +69,8 @@ console.log("JS file connected");
             pin: true, // Keep canvas fixed while scrolling
             scrub: 1.5,
             start: "top +=6%",
-            end: "+=120%"
+            end: "bottom ",
+            // markers: true
         },
         onUpdate: drawFrame
     })
@@ -180,4 +182,36 @@ console.log("JS file connected");
     buttons.forEach(button=> {
         button.addEventListener("click", changeColor);
     })
+})();
+
+// ------------- Fade-in Animation ------------- 
+
+(function() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const sections = document.querySelectorAll(".fade-in");
+
+    sections.forEach((section) => {
+        gsap.fromTo(
+            section,
+            { 
+                opacity: 0, 
+                y: 100 
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 2,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top +=90%",
+                    end: "bottom +=50%",
+                    scrub: 1.5,
+                    once: true,
+                    // markers: true
+                },
+            }
+        );
+    });
 })();
