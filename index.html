@@ -27,7 +27,7 @@
         </section>
 
         <!-- Mobile Menu -->
-        <nav id="mobileMenu" class="hidden">
+        <nav id="mobileMenu" class="no-scroll">
             <h3 class="hidden">Mobile Menu</h3>
 
             <button id="closeHamburger">&times;</button>
@@ -67,9 +67,9 @@
             <h3 class="col-span-full">More than sound</h3>
             <p class="col-span-full">Wave blends comfort, elegance, and immersive audio for your everyday life.</p>
         </div>
-        <video class="grid-con" controls preload="metadata" aria-hidden="true" autoplay loop muted>
-            <source class="col-span-full" src="video/Earbuds_Advertisement.mp4" type="video/mp4">
-            <source class="col-span-full" src="video/Earbuds_Advertisement.webm" type="video/webm">
+        <video controls preload="metadata" aria-hidden="true" autoplay loop muted>
+            <source src="video/Earbuds_Advertisement.mp4" type="video/mp4">
+            <source src="video/Earbuds_Advertisement.webm" type="video/webm">
             <p>Your browser does not support HTML5 video. Please update your browser to the latest version.</p>
         </video>
     </section>
@@ -88,10 +88,14 @@
         </div>
     </section>
 
-    <section class="grid-con">
+    <section class="grid-con model-con">
+        <h2 class="hidden">Earbuds Ar Viewer</h2>
+        <h3 class="col-span-full">Wave is specially designed for you</h3>
+        <p class="col-span-full">Explore Wave in 3D. Rotate and tap hotspots to discover what makes it unique.</p>
+
         <model-viewer class="col-span-full m-col-start-2 m-col-span-10" src="model/Chumdee_Chanya_WorkingFile.gltf"
-            camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1"
-            environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.8" disable-zoom>
+            camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1" exposure="0.6"
+            disable-zoom>
 
             <button class="Hotspot" slot="hotspot-1"
                 data-position="-0.34792785536887116m 1.0911879997323666m -0.6833358506481345m"
@@ -126,6 +130,33 @@
                 </div>
             </button>
         </model-viewer>
+    </section>
+
+    <section class="grid-con card-con">
+        <div class="features col-span-full m-col-start-1 m-col-span-6">
+            <img src="images/audio-waves.png" alt="Audio icon">
+            <h2>Clear Audio</h2>
+            <p>Designed for clarity and depth, advanced sound technology and precise microphones work together to
+                deliver an effortlessly pure sound experience.</p>
+        </div>
+        <div class="features col-span-full m-col-start-7 m-col-span-6">
+            <img src="images/charging.png" alt="Fast charging battery icon">
+            <h2>Fast Charge</h2>
+            <p>Fast charging gives you hours of playback in just a few minutes, keeping you powered and ready at all
+                times.</p>
+        </div>
+        <div class="features col-span-full m-col-start-1 m-col-span-6">
+            <img src="images/clock.png" alt="Clock icon">
+            <h2>Long Lasting Battery</h2>
+            <p>A single charge lets you enjoy hours of music and calls without interruption, keeping you powered all
+                day.</p>
+        </div>
+        <div class="features col-span-full m-col-start-7 m-col-span-6">
+            <img src="images/ear.png" alt="Ear icon">
+            <h2>Comfortable Fit</h2>
+            <p>Inspired by earcuff design, these earbuds stay securely in place while adding a stylish touch to your
+                everyday look.</p>
+        </div>
     </section>
 
 

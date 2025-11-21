@@ -18,11 +18,14 @@ console.log("JS file connected");
 
     function toggleHamburger() {
         const mobileMenu = document.querySelector("#mobileMenu");
+        const isClosing = mobileMenu.classList.contains("open");
 
-        if(mobileMenu.classList.contains("hidden")) {
-            mobileMenu.classList.remove("hidden");
+        if (isClosing) {
+            mobileMenu.classList.remove("open");
+            document.body.classList.remove("no-scroll");
         } else {
-            mobileMenu.classList.add("hidden");
+            mobileMenu.classList.add("open");
+            document.body.classList.add("no-scroll"); 
         }
     }
 
@@ -96,28 +99,16 @@ console.log("JS file connected");
     const hotspots = document.querySelectorAll(".Hotspot");
     const productDetails = [
         {
-            title:"Clear Audio",
-            description:"Designed for clarity and depth, advanced sound technology and precise microphones work together to deliver an effortlessly pure sound experience.",
-            image:"images/audio-waves.png",
-            alt:"Audio icon"
+            title:"Clear Audio"
         },
         {
-            title:"Fast Charge",
-            description:"Fast charging gives you hours of playback in just a few minutes, keeping you powered and ready at all times.",
-            image:"images/charging.png",
-            alt:"Fast charging battery icon"
+            title:"Fast Charge"
         },
         {
-            title:"Long Lasting Battery",
-            description:"A single charge lets you enjoy hours of music and calls without interruption, keeping you powered all day.",
-            image:"images/clock.png",
-            alt:"Clock icon"
+            title:"Long Lasting Battery"
         },
         {
-            title:"Comfortable Fit",
-            description:"Inspired by earcuff design, these earbuds stay securely in place while adding a stylish touch to your everyday look.",
-            image:"images/ear.png",
-            alt:"Ear icon"
+            title:"Comfortable Fit"
         }
     ]
 
@@ -132,16 +123,7 @@ console.log("JS file connected");
             const titleElement = document.createElement("h2");
             titleElement.textContent = productDetail.title;
 
-            const descriptionElement = document.createElement("p");
-            descriptionElement.textContent = productDetail.description;
-
-            const imageElement = document.createElement("img");
-            imageElement.src = productDetail.image;
-            imageElement.alt = productDetail.alt;
-
-            currentHotspot.appendChild(imageElement);
             currentHotspot.appendChild(titleElement);
-            currentHotspot.appendChild(descriptionElement);
         });
     }
 

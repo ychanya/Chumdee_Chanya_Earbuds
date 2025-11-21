@@ -1,0 +1,25 @@
+@use '../abstracts';
+
+.features {
+    color: abstracts.$primary-color;
+    background-color: abstracts.$secondary-color;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 16px;
+        color: abstracts.$text-color;
+    }
+
+    img {
+        margin: 28px 0;
+        width: 50px;
+        height: 50px;
+    }
+}

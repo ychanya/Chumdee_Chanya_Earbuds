@@ -2,16 +2,18 @@
 
 #mobileMenu {
     background-color: abstracts.$secondary-color;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
     z-index: 20;
-    box-shadow: 0 2px 2px rgba(145, 144, 144, 0.3);
-    // .no-scroll{
-    //     overflow: hidden;
-    //     height: 100vh;
-    // }
+    transform: translateY(-100%);
+    transition: transform 1s ease-in-out;
+
+    &.open{
+        transform: translateY(0);
+        box-shadow: 0 2px 2px rgba(145, 144, 144, 0.3);
+    }
 
     button{
         font-size: 24px;
@@ -43,7 +45,8 @@
     li a {
         color: abstracts.$primary-color;
         text-decoration: none;
-        font-size: abstracts.$base-font-size;
+        font-size: 26px;
+        font-weight: bold;
         
         &:hover {
             color: abstracts.$text-color;
