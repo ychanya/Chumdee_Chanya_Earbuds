@@ -2,14 +2,9 @@ model-viewer {
   width: auto;
   margin-top: 40px;
   max-width: 1200px;
-  height: 700px;
-  background-color: #dadada;
+  height: 600px;
   border-radius: 20px;
-
-  img {
-    width: 60px;
-    margin: 15px 0 15px 0;
-  }
+  padding: 0 40px 0 40px;
 }
 
 .Hotspot {
@@ -50,32 +45,19 @@ model-viewer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   color: rgba(0, 0, 0, 0.8);
   display: block;
-  font-family: Futura, Helvetica Neue, sans-serif;
+  font-family: 'inter', Helvetica Neue, sans-serif;
   left: calc(100% + 1em);
-  max-width: 300px;
   overflow-wrap: break-word;
-  padding: 1.5em;
+  padding: 2em; 
   position: absolute;
   top: 50%;
-  width: max-content;
+  width: 200px;
   text-align: left;
 }
 
 .HotspotAnnotation h2 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 20px;
 }
-
-.HotspotAnnotation p {
-  font-size: 16px;
-  line-height: 25px;
-}
-
-model-viewer::part(default-progress-bar) {
-  background-color: #747474;
-  height: 15px;
-}  
 
 @media  screen and (max-width: 768px) {
   .Hotspot {
