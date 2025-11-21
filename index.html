@@ -64,8 +64,9 @@
     <section id="video-con">
         <h2 class="hidden">Video Advertisement</h2>
         <div class="grid-con">
-            <h3 class="col-span-full">More than sound</h3>
-            <p class="col-span-full">Wave blends comfort, elegance, and immersive audio for your everyday life.</p>
+            <h3 class="col-span-full m-col-span-full">More than sound</h3>
+            <p class="col-span-full m-col-span-full">Wave blends comfort, elegance, and immersive audio for your
+                everyday life.</p>
         </div>
         <video controls preload="metadata" aria-hidden="true" autoplay loop muted>
             <source src="video/Earbuds_Advertisement.mp4" type="video/mp4">
@@ -76,11 +77,11 @@
 
     <section class="grid-con">
         <h2 class="hidden">Earbuds X-Ray View</h2>
-        <div id="xray-content" class="col-span-full">
+        <div id="xray-content" class="col-span-full m-col-span-full">
             <h3>Take a closer look</h3>
             <p>Slide to reveal Wave’s design and see what’s inside.</p>
         </div>
-        <div id="xray-con" class="col-span-full">
+        <div id="xray-con" class="col-span-full m-col-span-full">
             <div id="surfaceView">
                 <div id="xrayView"></div>
                 <input type="range" min="0" max="100" value="50" id="slider">
@@ -90,8 +91,9 @@
 
     <section class="grid-con model-con">
         <h2 class="hidden">Earbuds Ar Viewer</h2>
-        <h3 class="col-span-full">Wave is specially designed for you</h3>
-        <p class="col-span-full">Explore Wave in 3D. Rotate and tap hotspots to discover what makes it unique.</p>
+        <h3 class="col-span-full m-col-span-full">Wave is specially designed for you</h3>
+        <p class="col-span-full m-col-span-full">Explore Wave in 3D. Rotate and tap hotspots to discover what makes it
+            unique.</p>
 
         <model-viewer class="col-span-full m-col-start-2 m-col-span-10" src="model/Chumdee_Chanya_WorkingFile.gltf"
             camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1" exposure="0.6"
@@ -133,34 +135,47 @@
     </section>
 
     <section class="grid-con card-con">
+        <h2 class="hidden">Earbuds features description</h2>
         <div class="features col-span-full m-col-start-1 m-col-span-6">
             <img src="images/audio-waves.png" alt="Audio icon">
-            <h2>Clear Audio</h2>
+            <h3>Clear Audio</h3>
             <p>Designed for clarity and depth, advanced sound technology and precise microphones work together to
                 deliver an effortlessly pure sound experience.</p>
         </div>
         <div class="features col-span-full m-col-start-7 m-col-span-6">
             <img src="images/charging.png" alt="Fast charging battery icon">
-            <h2>Fast Charge</h2>
+            <h3>Fast Charge</h3>
             <p>Fast charging gives you hours of playback in just a few minutes, keeping you powered and ready at all
                 times.</p>
         </div>
         <div class="features col-span-full m-col-start-1 m-col-span-6">
             <img src="images/clock.png" alt="Clock icon">
-            <h2>Long Lasting Battery</h2>
+            <h3>Long Lasting Battery</h3>
             <p>A single charge lets you enjoy hours of music and calls without interruption, keeping you powered all
                 day.</p>
         </div>
         <div class="features col-span-full m-col-start-7 m-col-span-6">
             <img src="images/ear.png" alt="Ear icon">
-            <h2>Comfortable Fit</h2>
+            <h3>Comfortable Fit</h3>
             <p>Inspired by earcuff design, these earbuds stay securely in place while adding a stylish touch to your
                 everyday look.</p>
         </div>
     </section>
 
-
-
+    <div class="grid-con">
+        <h2 class="hidden">Earbuds options</h2>
+        <section class="col-span-full m-col-start-2 m-col-span-10" id="product-con">
+            <h3>Keep Exploring</h3>
+            <section id="color-options">
+                <button id="white"></button>
+                <button id="oceanMist"></button>
+                <button id="plum"></button>
+                <button id="moonlitPurple"></button>
+                <button id="lemon"></button>
+            </section>
+            <img src="images/product_options/earbuds_white.jpg" id="product-image">
+        </section>
+    </div>
 
     <script src="https://cdn.plyr.io/3.8.3/plyr.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>

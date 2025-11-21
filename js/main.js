@@ -5,6 +5,7 @@
 //   02. Video Player
 //   03. Model Viewer
 //   04. X-Ray view
+//   05. Color Options
 
 // ********************************************************
 
@@ -95,6 +96,7 @@ console.log("JS file connected");
 })();
 
 // ------------- Model Viewer ------------- 
+
 (function(){
     const hotspots = document.querySelectorAll(".Hotspot");
     const productDetails = [
@@ -163,4 +165,19 @@ console.log("JS file connected");
 
     sliderControl.addEventListener("input", moveXrayView);
     window.addEventListener("load", resetSlider);
+})();
+
+// ------------- Color Options ------------- 
+
+(function() {
+    const earbudsOptions = document.querySelector("#product-image");
+    const buttons = document.querySelectorAll("#color-options button");
+
+    function changeColor() {
+        earbudsOptions.src = `images/product_options/earbuds_${this.id}.jpg`;
+    }
+
+    buttons.forEach(button=> {
+        button.addEventListener("click", changeColor);
+    })
 })();
