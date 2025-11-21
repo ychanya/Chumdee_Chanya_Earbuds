@@ -19,7 +19,7 @@
         <!-- Mobile Nav -->
         <section id="mobile-nav" class="grid-con">
             <h3 class="hidden">Mobile Navigation</h3>
-            <a href="index.html" class="col-start-1 col-span-1 wrapper">WAVE</a>
+            <a href="index.html" class="col-start-1 col-span-1 wrapper logo">WAVE</a>
             <div class="col-start-4 col-span-1 wrapper">
                 <img id="shopping-icon" src="images/shopping-bag.png" alt="Shopping bag icon">
                 <button id="hamburgerBtn">&#9776;</button>
@@ -43,7 +43,7 @@
         <nav id="main-nav">
             <h3 class="hidden">Desktop Navigation</h3>
 
-            <a href="index.html" id="main-logo">WAVE</a>
+            <a href="index.html" id="main-logo" class="logo">WAVE</a>
 
             <ul>
                 <li><a href="#">Overview</a></li>
@@ -63,11 +63,13 @@
 
     <section id="video-con">
         <h2 class="hidden">Video Advertisement</h2>
-        <h3>More than sound</h3>
-        <p>Wave blends comfort, elegance, and immersive audio for your everyday life.</p>
-        <video controls preload="metadata" aria-hidden="true" autoplay loop class="col-span-full">
-            <source src="video/Earbuds_Advertisement.mp4" type="video/mp4">
-            <source src="video/Earbuds_Advertisement.webm" type="video/webm">
+        <div class="grid-con">
+            <h3 class="col-span-full">More than sound</h3>
+            <p class="col-span-full">Wave blends comfort, elegance, and immersive audio for your everyday life.</p>
+        </div>
+        <video class="grid-con" controls preload="metadata" aria-hidden="true" autoplay loop muted>
+            <source class="col-span-full" src="video/Earbuds_Advertisement.mp4" type="video/mp4">
+            <source class="col-span-full" src="video/Earbuds_Advertisement.webm" type="video/webm">
             <p>Your browser does not support HTML5 video. Please update your browser to the latest version.</p>
         </video>
     </section>
