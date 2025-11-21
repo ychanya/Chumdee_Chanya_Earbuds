@@ -4,7 +4,7 @@
 //   01. Earbuds Scrub
 //   02. Video Player
 //   03. Model Viewer
-//   04. X-Ray view
+//   04. X-Ray View
 //   05. Color Options
 //   06. Fade-in Animation
 
@@ -66,7 +66,7 @@ console.log("JS file connected");
         snap: "frame",
         scrollTrigger: {
             trigger: "#earbud-scrub",
-            pin: true, // Keep canvas fixed while scrolling
+            pin: true, 
             scrub: 1.5,
             start: "top +=6%",
             end: "bottom ",
@@ -75,7 +75,6 @@ console.log("JS file connected");
         onUpdate: drawFrame
     })
 
-    // Draw the first frame after the first image loads
     images[0].addEventListener("load", drawFrame);
 
     function drawFrame() {
@@ -135,13 +134,11 @@ console.log("JS file connected");
 
     function showProductDetail() {
         let currentHotspot = document.querySelector(`#${this.slot}`);
-        // Fade in the hotspot content using GSAP animation
         gsap.to(currentHotspot, { duration: 1, autoAlpha: 1 });
     }
 
     function hideProductDetail() {
         let currentHotspot = document.querySelector(`#${this.slot}`);
-        // Fade out the hotspot content using GSAP animation
         gsap.to(currentHotspot, { duration: 1, autoAlpha: 0 });
     }
 
@@ -151,7 +148,7 @@ console.log("JS file connected");
     });
 })();
 
-// ------------- X-Ray view ------------- 
+// ------------- X-Ray View ------------- 
 
 (function() {
     const xrayView = document.querySelector("#xrayView");

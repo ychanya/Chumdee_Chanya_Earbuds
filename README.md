@@ -1,6 +1,6 @@
 # Earbuds Promotional Page
 
-![Earbud's promotional image](images/Earbuds_promotional.jpg)
+![Earbud's promotional image](images/earbuds_poster.jpg)
 Welcome to my Earbuds Promotional Page! This is a promotional webpage created to showcase my 3D earbuds, combining product visualization from Cinema 4D with a modern, responsive web design.
 
 ## **Table of Contents**
