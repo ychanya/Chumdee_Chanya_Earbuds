@@ -164,3 +164,21 @@ console.log("JS file connected");
         hotspot.addEventListener("mouseleave", hideProductDetail);
     });
 })();
+
+// ------------- X-Ray view ------------- 
+
+(function() {
+    const xrayView = document.querySelector("#xrayView");
+    const sliderControl = document.querySelector("#slider");
+
+    function moveXrayView() {
+        xrayView.style.width = `${slider.value}%`;
+    }
+
+    function resetSlider() {
+        sliderControl.value = 50;
+    }
+
+    sliderControl.addEventListener("input", moveXrayView);
+    window.addEventListener("load", resetSlider);
+})();

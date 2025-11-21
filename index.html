@@ -73,6 +73,20 @@
     </section>
 
     <section class="grid-con">
+        <h2 class="hidden">Earbuds X-Ray View</h2>
+        <div id="xray-content" class="col-span-full">
+            <h3>Take a closer look</h3>
+            <p>Slide to reveal Wave’s design and see what’s inside.</p>
+        </div>
+        <div id="xray-con" class="col-span-full">
+            <div id="surfaceView">
+                <div id="xrayView"></div>
+                <input type="range" min="0" max="100" value="50" id="slider">
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-con">
         <model-viewer class="col-span-full m-col-start-2 m-col-span-10" src="model/Chumdee_Chanya_WorkingFile.gltf"
             camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1"
             environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.8" disable-zoom>
@@ -111,6 +125,8 @@
             </button>
         </model-viewer>
     </section>
+
+
 
 
     <script src="https://cdn.plyr.io/3.8.3/plyr.js"></script>
