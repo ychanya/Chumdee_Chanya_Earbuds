@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wave Earbuds</title>
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.8.3/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.8.3/plyr.css">
     <script src="https://kit.fontawesome.com/bb4be9e166.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/main.css">
@@ -63,25 +63,25 @@
 
     <section id="overviewSect" class="video-con">
         <h2 class="hidden">Video Advertisement</h2>
-        <div class="grid-con">
+        <div class="grid-con fade-in">
             <h3 class="col-span-full m-col-span-full">More than sound</h3>
             <p class="col-span-full m-col-span-full">Wave blends comfort, elegance, and immersive audio for your
                 everyday life.</p>
         </div>
-        <video controls preload="metadata" aria-hidden="true" autoplay loop muted>
+        <video class="fade-in" controls preload="metadata" aria-hidden="true" autoplay loop muted>
             <source src="video/Earbuds_Advertisement.mp4" type="video/mp4">
             <source src="video/Earbuds_Advertisement.webm" type="video/webm">
             <p>Your browser does not support HTML5 video. Please update your browser to the latest version.</p>
         </video>
     </section>
 
-    <section id="featureSect" class="grid-con">
+    <section class="grid-con">
         <h2 class="hidden">Earbuds X-Ray View</h2>
-        <div id="xray-content" class="col-span-full m-col-span-full">
+        <div id="xray-content" class="col-span-full m-col-span-full fade-in">
             <h3>Take a closer look</h3>
             <p>Slide to reveal Wave’s design and see what’s inside.</p>
         </div>
-        <div id="xray-con" class="col-span-full m-col-span-full">
+        <div id="xray-con" class="col-span-full m-col-span-full fade-in">
             <div id="surfaceView">
                 <div id="xrayView"></div>
                 <input type="range" min="0" max="100" value="50" id="slider">
@@ -89,15 +89,17 @@
         </div>
     </section>
 
-    <section class="grid-con model-con">
+    <section id="featureSect" class="grid-con model-con">
         <h2 class="hidden">Earbuds Ar Viewer</h2>
-        <h3 class="col-span-full m-col-span-full">Wave is specially designed for you</h3>
-        <p class="col-span-full m-col-span-full">Explore Wave in 3D. Rotate and tap hotspots to discover what makes it
+        <h3 class="col-span-full m-col-span-ful fade-in">Wave is specially designed for you</h3>
+        <p class="col-span-full m-col-span-full fade-in">Explore Wave in 3D. Rotate and tap hotspots to discover what
+            makes
+            it
             unique.</p>
 
-        <model-viewer class="col-span-full m-col-start-2 m-col-span-10" src="model/Chumdee_Chanya_WorkingFile.gltf"
-            camera-controls tone-mapping="neutral" poster="images/poster.webp" shadow-intensity="1" exposure="0.6"
-            disable-zoom>
+        <model-viewer class="col-span-full m-col-start-2 m-col-span-10 fade-in"
+            src="model/Chumdee_Chanya_WorkingFile.gltf" camera-controls tone-mapping="neutral"
+            poster="images/poster.webp" shadow-intensity="1" exposure="0.6" disable-zoom>
 
             <button class="Hotspot" slot="hotspot-1"
                 data-position="-0.34792785536887116m 1.0911879997323666m -0.6833358506481345m"
@@ -136,25 +138,25 @@
 
     <section class="grid-con card-con">
         <h2 class="hidden">Earbuds features description</h2>
-        <div class="features col-span-full m-col-start-1 m-col-span-6 l-col-start-2 l-col-span-5">
+        <div class="features col-span-full m-col-start-1 m-col-span-6 l-col-start-2 l-col-span-5 fade-in">
             <img src="images/audio-waves.png" alt="Audio icon">
             <h3>Clear Audio</h3>
             <p>Designed for clarity and depth, advanced sound technology and precise microphones work together to
                 deliver an effortlessly pure sound experience.</p>
         </div>
-        <div class="features col-span-full m-col-start-7 m-col-span-6 l-col-start-7 l-col-span-5">
+        <div class="features col-span-full m-col-start-7 m-col-span-6 l-col-start-7 l-col-span-5 fade-in">
             <img src="images/charging.png" alt="Fast charging battery icon">
             <h3>Fast Charge</h3>
             <p>Fast charging gives you hours of playback in just a few minutes, keeping you powered and ready at all
                 times.</p>
         </div>
-        <div class="features col-span-full m-col-start-1 m-col-span-6 l-col-start-2 l-col-span-5">
+        <div class="features col-span-full m-col-start-1 m-col-span-6 l-col-start-2 l-col-span-5 fade-in">
             <img src="images/clock.png" alt="Clock icon">
             <h3>Long Lasting Battery</h3>
             <p>A single charge lets you enjoy hours of music and calls without interruption, keeping you powered all
                 day.</p>
         </div>
-        <div class="features col-span-full m-col-start-7 m-col-span-6 l-col-start-7 l-col-span-5">
+        <div class="features col-span-full m-col-start-7 m-col-span-6 l-col-start-7 l-col-span-5 fade-in">
             <img src="images/ear.png" alt="Ear icon">
             <h3>Comfortable Fit</h3>
             <p>Inspired by earcuff design, these earbuds stay securely in place while adding a stylish touch to your
@@ -165,19 +167,20 @@
     <section id="exploringSect" class="grid-con">
         <h2 class="hidden">Earbuds options</h2>
         <div class="col-span-full m-col-start-2 m-col-span-10" id="product-con">
-            <h3>Keep Exploring</h3>
-            <div id="color-options">
+            <h3 class="fade-in">Keep Exploring</h3>
+            <div id="color-options" class="fade-in">
                 <button id="white"></button>
                 <button id="oceanMist"></button>
                 <button id="plum"></button>
                 <button id="moonlitPurple"></button>
                 <button id="lemon"></button>
             </div>
-            <img src="images/product_options/earbuds_white.jpg" id="product-image">
+            <img id="product-image" class="fade-in" src="images/product_options/earbuds_white.jpg"
+                alt="Product Option Image">
         </div>
     </section>
 
-    <footer>
+    <footer class="fade-in">
         <h2 class="hidden">Footer Navigation</h2>
         <div class="grid-con">
             <h3 class="col-start-1 col-span-2 m-col-start-2 m-col-span-2">WAVE</h3>
@@ -188,8 +191,6 @@
                 <li><a href="#exploringSect">Exploring</a></li>
                 <li><a href="#">Support</a></li>
             </ul>
-
-            <span class="col-start-1 col-span-3 m-col-start-2 m-col-span-3"></span>
 
             <p class="col-start-1 col-span-4 m-col-start-2 m-col-span-10">&copy; 2025 Chanya Chumdee</p>
         </div>

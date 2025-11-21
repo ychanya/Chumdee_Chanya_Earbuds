@@ -1,7 +1,14 @@
 @use '../abstracts';
 
-body {
+html{
+  scroll-behavior: smooth;
+
+  body {
     color: abstracts.$secondary-color;
+    #overviewSect, #featureSect ,#exploringSect {
+      scroll-margin-top: 62px;
+    }
+  }
 }
 
 .model-con {
