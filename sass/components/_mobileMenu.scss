@@ -2,7 +2,7 @@
 
 #mobileMenu {
     background-color: abstracts.$secondary-color;
-    position: absolute;
+    position: fixed;
     inset: 0;
     width: 100vw;
     height: 100vh;
@@ -16,7 +16,7 @@
     }
 
     button{
-        font-size: 24px;
+        font-size: 40px;
         background: none;
         border: none;
         font-family: inherit;
