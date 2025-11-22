@@ -1,6 +1,32 @@
 @use '../abstracts';
 
-canvas {
-  max-width: 100%;
-  margin-top: 62px;
+#hero-sect {
+  canvas {
+    margin-top: 62px;
+    width: 100%;
+  }
+
+  img {
+    margin-top: 62px;
+    width: 100%;
+    display: none; 
+  }
+
+  @media (max-width: 767px) {
+    canvas {
+      display: none;
+    }
+    img {
+      display: block;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    canvas {
+      display: none;
+    }
+    img {
+      display: block;
+    }
+  }
 }

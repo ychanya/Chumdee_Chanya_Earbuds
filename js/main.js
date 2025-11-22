@@ -67,9 +67,9 @@ console.log("JS file connected");
         scrollTrigger: {
             trigger: "#earbud-scrub",
             pin: true, 
-            scrub: 1.5,
+            scrub: 1,
             start: "top +=6%",
-            end: "bottom ",
+            end:"+=120%"
             // markers: true
         },
         onUpdate: drawFrame

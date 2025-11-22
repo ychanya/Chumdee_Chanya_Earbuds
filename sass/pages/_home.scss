@@ -6,7 +6,7 @@ html{
   body {
     color: abstracts.$secondary-color;
     #overviewSect, #featureSect ,#exploringSect {
-      scroll-margin-top: 62px;
+      scroll-margin-top: 74px;
     }
   }
 }
@@ -27,6 +27,33 @@ html{
     font-size: 18px;
     padding: 25px 50px 0 50px;
   }
+  @media  screen and (min-width: 768px) {
+    h3 {
+      color: abstracts.$primary-color;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    p {
+      color: abstracts.$text-color;
+      font-size: 24px;
+      padding: 25px 50px 0 50px;
+    }
+  }
+
+  @media  screen and (min-width: 1200px) {
+    h3 {
+      color: abstracts.$primary-color;
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    p {
+      color: abstracts.$text-color;
+      font-size: 28px;
+      padding: 25px 50px 0 50px;
+    }
+  }
 }
 
 .card-con {
@@ -36,32 +63,4 @@ html{
 
 .no-scroll {
   overflow: hidden;
-}
-
-@media  screen and (min-width: 768px) {
-  .model-con h3 {
-    color: abstracts.$primary-color;
-    font-size: 32px;
-    font-weight: bold;
-  }
-
-  .model-con p {
-    color: abstracts.$text-color;
-    font-size: 24px;
-    padding: 25px 50px 0 50px;
-  }
-}
-
-@media  screen and (min-width: 1200px) {
-  .model-con h3 {
-    color: abstracts.$primary-color;
-    font-size: 48px;
-    font-weight: bold;
-  }
-
-  .model-con p {
-    color: abstracts.$text-color;
-    font-size: 28px;
-    padding: 25px 50px 0 50px;
-  }
 }
